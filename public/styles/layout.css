@@ -1,0 +1,29 @@
+input[type=checkbox] + label{
+  display: inline-block;
+  cursor: pointer;
+  outline: 0;
+  width: 64px;
+  height: 64px;
+  background-image: url('../vendor/img/form-elements-sprite.png');
+  background-position: 12.2% 49.5%;
+  background-size: 900%;
+}
+
+input[type=checkbox]:checked + label {
+  display: inline-block;
+  cursor: pointer;
+  outline: 0;
+  width: 64px;
+  height: 64px;
+  background-image: url('../vendor/img/form-elements-sprite.png');
+  background-position: 29.4% 49.5%;
+  background-size: 900%;
+}
+/*
+input[type='checkbox'] + label.notChecked:hover,
+input[type='checkbox'] + label.checked:hover {
+  opacity: .7;
+}
+select[name='selectOpen'] {
+
+}*/

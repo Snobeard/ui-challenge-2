@@ -3,60 +3,79 @@
   <head>
     <meta charset="utf-8">
     <title>Ui Challenge 02</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modules.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <!-- Header -->
-    <h1><u>UI Challenge - Custom Form Elements</u></h1>
+    <form class="ui" method="post">
+      <!-- Header -->
+      <div>
+        <h1>UI Challenge - Custom Form Elements</h1>
+      </div>
 
-    <!-- Note: -->
-    <p>NOTE: <b>DO NOT</b> attempt to directly style radio buttons, checkboxes, or the custom select box - you'll need to use the provided sprite sheet and a series of custom JS methods to complete this challenge... don't worry if it's not perfect - styling custom form elements can be tricky and you'll need to use your best judgement at times!</p>
+      <!-- Note: -->
+      <div>
+        <p>NOTE: <b>DO NOT</b> attempt to directly style radio buttons, checkboxes, or the custom select box - you'll need to use the provided sprite sheet and a series of custom JS methods to complete this challenge... don't worry if it's not perfect - styling custom form elements can be tricky and you'll need to use your best judgement at times!</p>
+      </div>
 
-    <!-- text input -->
-    <label>text input
-      <input type="text" name="textInput" placeholder="placeholder text">
-    </label>
+      <!-- text input -->
+      <div>
+        <label>text input</label>
+          <input type="text" name="textInput" placeholder="placeholder text">
+      </div>
 
-    <!-- text input w/ validation error -->
-    <label>text input /w validation error
-      <input type="text" name="inputValidation" placeholder="placeholder text" required>
-    </label>
+      <!-- text input w/ validation error -->
+      <div>
+        <label>text input /w validation error</label>
+          <input type="text" name="inputValidation" placeholder="placeholder text" required>
+      </div>
 
-    <!-- select box -->
-    <label>select box
-      <select class="" name="select">
-        <option value="">please select and option...</option>
-      </select>
-    </label>
+      <!-- select box -->
+      <div>
+        <label>select box</label>
+          <select class="" name="select" disabled>
+            <option value="">please select an option...</option>
+          </select>
+      </div>
 
-    <!-- select box - open -->
-    <label>select box - open
-      <select class="" name="selectOpen">
-        <option value=""></option>
-        <option value="1">option 1</option>
-        <option value="2">option 2</option>
-        <option value="3">option 3</option>
-        <option value="4">option 4</option>
-        <option value="5">option 5</option>
-      </select>
-    </label>
+      <!-- select box - open -->
+      <div>
+        <label>select box - open</label>
+          <select class="" name="selectOpen" placeholder="test">
+            <option value="" disabled selected hidden>please select an option...</option>
+            <option value="1">option 1</option>
+            <option value="2">option 2</option>
+            <option value="3">option 3</option>
+            <option value="4">option 4</option>
+            <option value="5">option 5</option>
+          </select>
+      </div>
 
-    <!-- checkbox -->
-    <label>checkbox
-      <input type="checkbox" name="notCheck">
-      <input type="checkbox" name="isCheck" checked>
-    </label>
+      <!-- checkbox -->
+      <div>
+        <label>checkbox</label>
+        <input type="checkbox" name="notCheck"/>
+        <label for="notCheck"></label>
+        <input type="checkbox" name="isCheck" checked/>
+        <label for="isCheck"></label>
+      </div>
 
-    <!-- radio -->
-    <label>radio
-      <input type="radio" name="notRadio" value="0">
-      <input type="radio" name="isRadio" value="1" checked>
-    </label>
+      <!-- radio -->
+      <div>
+        <label>radio</label>
+        <input class="notSelected" type="radio" name="notRadio" value="0">
+        <input class="selected" type="radio" name="isRadio" value="1" checked>
+      </div>
 
-    <!-- buttons -->
-    <label>buttons
-      <button type="submit" name="lightButton">submit</button>
-      <button type="submit" name="darButton">submit</button>
-    </label>
+      <!-- buttons -->
+      <div>
+        <label>buttons</label>
+          <button type="submit" name="lightButton">submit</button>
+          <button type="submit" name="darButton">submit</button>
+      </div>
 
+    </form>
   </body>
 </html>
