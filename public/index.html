@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <form class="ui" method="post">
+    <form class="ui" method="#">
       <!-- Header -->
       <div>
         <h1>UI Challenge - Custom Form Elements</h1>
@@ -54,28 +54,35 @@
       </div>
 
       <!-- checkbox -->
-      <div>
+      <div id="checkbox">
         <label>checkbox</label>
         <input type="checkbox" name="notCheck"/>
-        <label for="notCheck"></label>
+        <label class="check" for="notCheck"></label>
         <input type="checkbox" name="isCheck" checked/>
-        <label for="isCheck"></label>
+        <label class="check" for="isCheck"></label>
       </div>
 
       <!-- radio -->
-      <div>
+      <div id="radio">
         <label>radio</label>
-        <input class="notSelected" type="radio" name="notRadio" value="0">
-        <input class="selected" type="radio" name="isRadio" value="1" checked>
+        <input type="radio" name="radioButtons" value="0">
+        <label class="radio" for="notRadio"></label>
+        <input type="radio" name="radioButtons" value="1" checked>
+        <label class="radio" for="isRadio"></label>
       </div>
 
       <!-- buttons -->
-      <div>
+      <div id="buttons">
         <label>buttons</label>
           <button type="submit" name="lightButton">submit</button>
           <button type="submit" name="darButton">submit</button>
       </div>
-
     </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script type="text/javascript">
+      myUI.initIndexPage();
+    </script>
   </body>
 </html>
