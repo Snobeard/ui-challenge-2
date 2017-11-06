@@ -4,7 +4,7 @@
 }
 
 body {
-  margin: 20px;
+  margin: 5vw 7vw;
 }
 
 label {
@@ -12,17 +12,27 @@ label {
 }
 
 div {
-  margin-bottom: 20px;
+  margin-bottom: 3.2vw;
 }
 
 button {
-  padding: 10px 30px;
+  padding: 2vw 6vw;
   border: none;
 }
 
 h1 {
-  font-size: 5.2vw;
+  font-size: 4vw;
   text-align: center;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 3vw;
+  font-style: italic;
+}
+
+label {
+  margin-bottom: 1vw;
 }
 
 input[type='radio'],
